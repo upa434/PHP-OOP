@@ -5,9 +5,10 @@ error_reporting(E_ALL);
 
 class Person
 {
-    var ?string $name = "Aufa";
-    var string $addres;
-    var string $country;
+    var string $name;
+    var ?string $addres = null;
+    var string $country = "Indonesia";
+
 }
 
-//jika kosong pada properties maka akan mengikuti default pada class
+//untuk menentukan tipe data dalam properties nya tambahkan setelah kata kunci var
