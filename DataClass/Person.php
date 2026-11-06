@@ -5,6 +5,7 @@ error_reporting(E_ALL);
 
 class Person
 {
+    const AUTHOR = "AUFANUR";
     var ?string $name;
     var ?string $addres = null;
     var ?string $country = "Indonesia";
