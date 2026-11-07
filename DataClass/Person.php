@@ -10,6 +10,10 @@ class Person
     var ?string $addres = null;
     var ?string $country = "Indonesia";
 
+    function __construct( string $name, ?string $addres){
+        $this->name = $name;
+        $this->addres = $addres;
+    }
     function sayHello(?string $name)
     {
 if(is_null($name)){
@@ -18,6 +22,11 @@ if(is_null($name)){
     echo  "Hi $name,My name is  $this->name" . PHP_EOL;
 }
        
+    }
+
+    function info()
+    {
+        echo "AUTHO : " . self::AUTHOR . PHP_EOL;
     }
 }
 

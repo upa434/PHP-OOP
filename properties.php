@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 require_once "DataClass/Person.php";
 
-$person = new Person();
+$person = new Person("Aufa", "Pekanbaru");
 $person->name = "Aufa";
 $person->addres = "Pekanbaru";
 $person->country = "Indonesia";
@@ -19,7 +19,7 @@ echo "country : $person->country" . PHP_EOL;
 
 echo "\n" . PHP_EOL;
 
-$person2 = new Person();
+$person2 = new Person("Nino" , "Tokyo");
 $person2->name = "Nino";
 $person2->addres = "Tokyo";
 $person2->country = "Japan";

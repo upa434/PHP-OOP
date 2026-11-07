@@ -5,11 +5,14 @@ error_reporting(E_ALL);
 
 require_once "DataClass/Person.php";
 
-$Aufa = new Person();
+$Aufa = new Person("Aufa", "Pekanbaru");
 $Aufa ->name = "Aufa";
 $Aufa->sayHello("Aufa");
 
-$Nino = new Person();
+$Nino = new Person("Nino" , "Tokyo");
 $Nino ->name = "Nino";
 $Nino->sayHello("Nino");
+
+$Aufa->info();
+$Nino->info();
 

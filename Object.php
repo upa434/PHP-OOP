@@ -5,6 +5,6 @@ error_reporting(E_ALL);
 
 require_once "DataClass/Person.php";
 
-$person = new Person();
+$person = new Person("Aufa", "Pekanbaru");
 
 var_dump($person);
