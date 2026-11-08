@@ -26,8 +26,11 @@ if(is_null($name)){
 
     function info()
     {
-        echo "AUTHO : " . self::AUTHOR . PHP_EOL;
+        echo "AUTHOR : " . self::AUTHOR . PHP_EOL;
     }
+    function __destruct()
+   { echo "Object person $this->name is destroyed" . PHP_EOL;
+ }
 }
 
 //untuk menentukan tipe data dalam properties nya tambahkan setelah kata kunci var
