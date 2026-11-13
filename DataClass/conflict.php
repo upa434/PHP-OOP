@@ -6,6 +6,15 @@ class conflict
 
   }
 
+class dummy
+  {
+
+  }
+
+class sample
+  {
+
+  }
 }
 
 namespace data\Two {
