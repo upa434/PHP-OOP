@@ -17,4 +17,15 @@ class category
         $this->name = $name;
     }
 
+    public function isExpensive(): bool
+    {
+        return $this->expensive;
+
+    }
+
+    public function setExpensive(bool $expensive): void
+    {
+        $this->expensive = $expensive;
+    }
+
 }
