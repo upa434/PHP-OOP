@@ -13,8 +13,9 @@ class category
     }
 
     public function setName(string $name): void
-    {
+    {   if(trim($name) != ""){  //berfungsi sebagai pelindung agar memprotect fingsion tsb
         $this->name = $name;
+    }
     }
 
     public function isExpensive(): bool
