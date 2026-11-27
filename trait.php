@@ -7,3 +7,5 @@ $person->Hello("Aufa");
 
 $person->name = "Aufa";
 var_dump($person);
+
+$person->Run();

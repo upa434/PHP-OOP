@@ -30,8 +30,16 @@ trait Hasname
     public string $name;
 }
 
-
+trait CanRun
+{
+    public abstract function Run(): void;
+}
 class Person
 {
-    use SayGoodBye, SayHello, Hasname;
+    use SayGoodBye, SayHello, Hasname, CanRun;
+
+    public function Run(): void
+    {
+        echo "Person $this->name is running" . PHP_EOL;
+    }
 }
