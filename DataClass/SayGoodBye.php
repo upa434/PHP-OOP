@@ -1,6 +1,8 @@
 <?php
 namespace traits;
 
+use Override;
+
 trait SayGoodBye
 {
     public function goodBye(?string $name): void
@@ -41,5 +43,17 @@ class Person
     public function Run(): void
     {
         echo "Person $this->name is running" . PHP_EOL;
+    }
+
+    
+    public function goodBye(?string $name): void
+    {
+        echo "good bye in person" . PHP_EOL;
+    }
+
+    
+    public function Hello(?string $name): void
+    {
+     echo "Hello in person" . PHP_EOL;   
     }
 }
